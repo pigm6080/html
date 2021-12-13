@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>타이틀</title>
+    <style></style>
+</head>
+<body>
+    <img id = image src="../../img/img1.jpg" width="120" height="100">
+    <script>
+        var i = 0;
+        function  change(){
+            i++
+            var a = i %2+1;
+            document.getElementById("image").src = "../../img/img"+a+".jpg";
+        }
+    </script>
+    <input type ="button" onclick="change()"value="눌러보세요"/>
+
+</body>
+</html>

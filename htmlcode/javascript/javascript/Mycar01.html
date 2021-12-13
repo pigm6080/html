@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>타이틀</title>
+    <style></style>
+</head>
+<body>
+    <script>
+        document.write("<p>이것은단락이다.<p>");
+        var myCar ={
+            model :20
+        }
+        document.write(myCar.model);
+        function Car( model, speed, color){
+            this.model = model;
+            this.speed = speed;
+            this.color = color;
+            this.brake = function(){
+                this.speed -=10;
+                
+            }
+            this.accel = function(){
+                this.speed += 10;
+            }
+
+        }
+        var aaa = Car(10,20,40);
+        document.write(aaa.model);
+        
+        myCar.brake();
+        document.write("<h1>안녕<h1>");
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>타이틀</title>
+    <style></style>
+    <script>
+        function process(){
+            var obj = document.getElementById("target");
+            alert(obj.value);
+        }
+        function process1(){
+            var obj = document.myform.target;
+            alert(obj.value);
+        }
+       
+    </script>
+</head>
+<body>
+    <form name = "myform">
+        <input type = "text" id = "target" nmae="text1">
+        <input type ="submit" value="wpcnf" onclick="process1()">
+
+
+    </form>
+</body>
+</html>

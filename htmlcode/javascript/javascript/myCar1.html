@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>타이틀</title>
+    <style></style>
+</head>
+<body>
+<script>
+    function Car(model, speed, color){
+        this.model = model;
+        this.speed = speed;
+        this.color = color;
+        this.brake = function(){
+            this.speed -= 10;
+        }
+        this.accel = function(){
+            this.speed += 10;
+        }
+
+    }
+    var MyCar = new Car("5234",123,"re");
+    document.write("모델 :" +MyCar.speed);
+    MyCar.accel();
+    document.write("차:"+MyCar.speed)
+    MyCar.fo = 10;
+    MyCar.money = function(){
+        model = MyCar.model+"안녕";
+    }
+    document.write(MyCar.fo+"<br>");
+    MyCar.money();
+    document.write(MyCar.model);
+
+    function point(xpos,ypos){
+        this.x = xpos;
+        this.y = ypos
+    }
+    
+
+
+</script>
+</body>
+</html>

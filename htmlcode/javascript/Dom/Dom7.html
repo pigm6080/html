@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>타이틀</title>
+    <style></style>
+</head>
+<body>
+    <script>
+        function add(t){
+            if (document.createTextNode){
+                var node = document.createTextNode(t);
+                document.getElementById("target").appendChild(node);
+            }
+        }
+
+    </script>
+    <div id = "target" onclick="add('동적으로 텍스트가추가욉니다.')" >durlfmf</div>
+</body>
+</html>

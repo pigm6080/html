@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>타이틀</title>
+    <style></style>
+</head>
+<body>
+    <ul>
+        <li>List item1</li>
+        <li>List item2</li>
+        <li>List item3</li>
+        <li>List item4</li>
+        <li>List item5</li>
+    </ul>
+    <script>
+        var list = document.getElementsByTagName('ul')[0];
+        var ele = list.getElementsByTagName('li');
+        document.write("a");
+        for (var index = 0; index < ele.length; index++) {
+            document.write(index);
+            alert(ele[index].firstChild.data);
+     }
+
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>타이틀</title>
+    <style></style>
+</head>
+<body>
+    <script>
+        function check(elem, msg){
+            var exp = /^[0-9]+$/;
+            if(elem.value.match(ecp)){
+                
+                return true;
+            }else{
+                
+                alert(msg);
+                elem.focus();
+                return false;
+            }
+        }
+    </script>
+    <form>
+        전화번호:<input type='text'id='phone'/>
+
+        <input type="button" onclick="check(document.getElementById('phone'),'숫자만입력')"
+         value="확인"/>
+
+
+
+    </form>
+
+
+</body>
+</html>
